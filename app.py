@@ -5,20 +5,20 @@ import os
 from script_API import mapbox_API
 from db import save_to_db
 
-
+# Inicia app flask
 app = Flask(__name__)
 
-# Upload API
+# Página principal - upload arquivo
 @app.route('/', methods=['GET', 'POST'])
 def upload_file():
     if request.method == 'POST':
-        # check if the post request has the file part
+        # Checar se o post request possui o arquivo de envio
         if 'file' not in request.files:
             print('no file')
             return redirect(request.url)
         file = request.files['file']
-        # if user does not select file, browser also
-        # submit a empty part without filename
+        # se o usuário não seleciona o arquivo, o browser mantém
+        # na pág principal
         if file.filename == '':
             print('no filename')
             return redirect(request.url)
@@ -34,7 +34,7 @@ def upload_file():
             return redirect('/downloadfile/'+ filename)
     return render_template('index.html')
 
-# Download API 
+# Página de Download 
 @app.route("/downloadfile/<filename>", methods = ['GET'])
 def download_file(filename):
     return render_template('download.html',value=filename)
@@ -43,5 +43,6 @@ def return_files_tut(filename):
     file_path = settings.UPLOAD_FOLDER + filename
     return send_file(file_path, as_attachment=True, attachment_filename='')
 
+# Executar flask
 if __name__ == '__main__':
     app.run(debug=True, host='0.0.0.0')
