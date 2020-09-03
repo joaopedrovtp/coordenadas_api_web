@@ -1,6 +1,6 @@
 # Busca de coordenadas geográficas - Mapbox API
  
-Esse projeto tem o objetivo de oferecer um serviço de busca de coordenadas geográficas a partir a partir de endereço(s) informado(s). A arquitetura da solução:
+Esse projeto tem o objetivo de oferecer um serviço de busca de coordenadas geográficas a partir de endereço(s) informado(s) em uma planila. A arquitetura da solução:
 
 ![Project_img](img/project_diagram.png)
 
