@@ -4,7 +4,7 @@ Esse projeto tem o objetivo de oferecer um serviço de busca de coordenadas geog
 
 ![Project_img](img/project_diagram.png)
 
-Tecnologias:
+### Tecnologias:
 
 - Flask: Micro-framework escrito em python para desenvolvimento web;
 - Mapbox Geocoding API: Script em python para coleta das coordenadas utilizando a API do Mapbox (https://www.mapbox.com/place-search/);
