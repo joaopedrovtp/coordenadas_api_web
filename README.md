@@ -18,7 +18,7 @@ Iniciar na raiz do diretório do projeto:
 ```bash
 docker-compose up
 ```
-Assim que executar, bastar acessar o "localhost:5000" no seu navegador.
+Assim que executar, basta acessar o "localhost:5000" no seu navegador.
 
 ![print_web](img/print_web.png)
 
