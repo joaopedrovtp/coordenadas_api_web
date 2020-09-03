@@ -13,6 +13,8 @@ Esse projeto tem o objetivo de oferecer um serviço de busca de coordenadas geog
 
 ## Como rodar
 
+Iniciar na raiz do diretório do projeto:
+
 ```bash
 docker-compose up
 ```
