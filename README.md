@@ -20,7 +20,7 @@ Assim que executar, bastar acessar o "localhost:5000" no seu navegador.
 
 ![print_web](img/print_web.png)
 
-Utilze o arquivo de excel como layout [aqui](file/)
+⚠️ Utilize o arquivo de excel como layout [aqui](file/)
 
 
 
