@@ -11,3 +11,15 @@ Esse projeto tem o objetivo de oferecer um serviço de busca de coordenadas geog
 - Postgresql: Banco de dados para armazenamento das consultas;
 - Docker: Container para rodar e isolar a aplicação;
 
+## Como rodar
+
+```bash
+docker-compose up
+```
+Assim que executar, bastar acessar o "localhost:5000" no seu navegador.
+
+<img>
+
+
+
+
