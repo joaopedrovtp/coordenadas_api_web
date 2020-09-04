@@ -1,6 +1,6 @@
 # Busca de coordenadas geográficas - Mapbox API
  
-Esse projeto tem o objetivo de oferecer um serviço de busca de coordenadas geográficas a partir de endereço(s) informado(s) em uma planila. A arquitetura da solução:
+Esse projeto tem o objetivo de oferecer um serviço de busca de coordenadas geográficas a partir de endereço(s) informado(s) em uma planilha. A arquitetura da solução:
 
 ![Project_img](img/project_diagram.png)
 
@@ -23,6 +23,18 @@ Assim que executar, basta acessar o "localhost:5000" no seu navegador.
 ![print_web](img/print_web.png)
 
 ⚠️ Utilize o arquivo de excel como layout [aqui](file/)
+
+Seguindo o modelo do excel (mesmo nome/ de colunas), a API está configurada para retornar até 3 localizações mais próximas da busca e somente é valido para endereços do **Brasil**. O resultado esse:
+
+Busca: 
+
+![busca_end](img/busca_end.png)
+
+Resultado:
+
+![consulta_end](img/consulta_end.png)
+
+
 
 
 
