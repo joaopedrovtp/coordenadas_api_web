@@ -34,7 +34,10 @@ Seguindo o modelo do excel (mesmo nome/nr. de colunas), a API está configurada 
 
 ![consulta_end](img/consulta_end.png)
 
-
+Obs.:
+- O Geocoding API do Mapbox aceita até 100.000 requests gratuitos, passando disso é pago.
+- Pode ser consultado endereço de qualquer país, mas limitei a busca apenas para o Brasil;
+- Documentação da API: https://docs.mapbox.com/api/search/#geocoding 
 
 
 
