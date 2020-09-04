@@ -26,11 +26,11 @@ Assim que executar, basta acessar o "localhost:5000" no seu navegador.
 
 Seguindo o modelo do excel (mesmo nome/ de colunas), a API está configurada para retornar até 3 localizações mais próximas da busca e somente é valido para endereços do **Brasil**. O resultado próximo seria como esse:
 
-Busca: 
+**Busca:** 
 
 ![busca_end](img/busca_end.png)
 
-Resultado:
+**Resultado:**
 
 ![consulta_end](img/consulta_end.png)
 
