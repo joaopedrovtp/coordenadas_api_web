@@ -24,7 +24,7 @@ Assim que executar, basta acessar o "localhost:5000" no seu navegador.
 
 ⚠️ Utilize o arquivo de excel como layout [aqui](file/)
 
-Seguindo o modelo do excel (mesmo nome/ de colunas), a API está configurada para retornar até 3 localizações mais próximas da busca e somente é valido para endereços do **Brasil**. O resultado esse:
+Seguindo o modelo do excel (mesmo nome/ de colunas), a API está configurada para retornar até 3 localizações mais próximas da busca e somente é valido para endereços do **Brasil**. O resultado próximo seria como esse:
 
 Busca: 
 
