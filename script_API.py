@@ -6,8 +6,8 @@ Planilha excel utilizada como fonte de dados - verificar arquivo 'Layout - Pesqu
 
 import os  # lida com o sistema operacional da máquina
 from openpyxl import load_workbook, workbook  # biblioteca que lida com o excel
-from mapbox import Geocoder
-from dynaconf import settings
+from mapbox import Geocoder # Mapxbox API 
+from dynaconf import settings # Configuration Management for Python (https://github.com/rochacbruno/dynaconf)
 
 
 def mapbox_API(file):
