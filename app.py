@@ -1,9 +1,9 @@
 from flask import Flask,flash,request,redirect,send_file,render_template
 from werkzeug.utils import secure_filename
 from dynaconf import settings
-import os
-from script_API import mapbox_API
-from db import save_to_db
+import os 
+from script_API import mapbox_API # local
+from db import save_to_db # local
 
 # Inicia app flask
 app = Flask(__name__)
@@ -17,7 +17,7 @@ def upload_file():
             print('no file')
             return redirect(request.url)
         file = request.files['file']
-        # se o usuário não seleciona o arquivo, o browser mantém
+        # caso o usuário não selecione o arquivo, o browser mantém
         # na pág principal
         if file.filename == '':
             print('no filename')
@@ -28,7 +28,7 @@ def upload_file():
             new_file.save(os.path.join(settings.UPLOAD_FOLDER, filename))
             print("saved file successfully")
             # Chamar função para guardar dados no db
-            save_to_db()
+            # save_to_db()
 
         # enviar nome de arquivo como parametro para download
             return redirect('/downloadfile/'+ filename)

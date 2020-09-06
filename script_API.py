@@ -17,7 +17,7 @@ def mapbox_API(file):
     i = 2  # aqui indica começará da segunda linha do excel, ou seja, pulará o cabeçalho
     for r in sheet.rows:
 
-        endereco = sheet[i][1]
+        endereco = sheet[i][1] # [linha][coluna]
         bairro = sheet[i][2]
         munic_UF = sheet[i][3]
 
@@ -47,11 +47,11 @@ def mapbox_API(file):
             continue
 
         # Loop para coletar os 3 endereços/coordenadas   
-        k = 0
+        k = 6
         for j in range(3): 
-            # Coletar o endereço    
+            # Coletar o endereço completo
             address = response.geojson()['features'][j]['place_name']
-            sheet[i][6+k].value = address
+            sheet[i][k].value = address
 
             # Coletar a latitude e logitude     
             latlong  = response.geojson()['features'][j]['center']
@@ -59,8 +59,8 @@ def mapbox_API(file):
             longitude = latlong[0]
 
             # Preenchendo lat/long em cada célula 
-            sheet[i][7+k].value = latitude
-            sheet[i][8+k].value = longitude
+            sheet[i][k+1].value = latitude
+            sheet[i][k+2].value = longitude
 
             k += 3
 
