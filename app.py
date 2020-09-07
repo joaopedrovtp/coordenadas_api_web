@@ -28,7 +28,7 @@ def upload_file():
             new_file.save(os.path.join(settings.UPLOAD_FOLDER, filename))
             print("saved file successfully")
             # Chamar função para guardar dados no db
-            # save_to_db()
+            save_to_db()
 
         # enviar nome de arquivo como parametro para download
             return redirect('/downloadfile/'+ filename)
