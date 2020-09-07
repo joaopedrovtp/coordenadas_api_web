@@ -1,6 +1,6 @@
 import pandas as pd
-from sqlalchemy import create_engine, Column, Integer, String
-from sqlalchemy.ext.declarative import declarative_base
+from sqlalchemy import create_engine # db
+from sqlalchemy.ext.declarative import declarative_base # db
 from dynaconf import settings
 import os
 

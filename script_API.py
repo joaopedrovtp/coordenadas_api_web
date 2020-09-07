@@ -36,7 +36,7 @@ def mapbox_API(file):
         geocoder = Geocoder(access_token=settings.MAPBOX_TOKEN) # Token auth
 
         ## Buscando localização pela API pelo endereço completo
-        # Busca pelo endereço completo no país Brasil
+        # Busca pelo endereço completo no país Brasil, limitando a 3 resultados
         response = geocoder.forward(endereco_completo, country=['br'], limit = 3)
         
         # Caso não localize o endereço, será informado na célula do excel
