@@ -1,5 +1,4 @@
 [default]
-TITLE = 'Search coordinates with Mapbox Geocoding API'
 UPLOAD_FOLDER = 'uploads/'
 DATABASE_URL = 'postgres://postgres:password123@db/coordenadas_api' 
 MAPBOX_TOKEN = 'pk.eyJ1Ijoiam9hb3BlZHJvdnRwIiwiYSI6ImNrZGJ4cDR4cTBmeDIycnA5OHZtMXRhdmsifQ.MNIytCWzgUThbklaT79axA'
