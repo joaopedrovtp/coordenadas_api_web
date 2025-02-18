@@ -1,43 +1,45 @@
-# Busca de coordenadas geográficas - Mapbox API
+# Geographic Coordinates Search
  
-Esse projeto tem o objetivo de oferecer um serviço de busca de coordenadas geográficas a partir de endereço(s) informado(s) em uma planilha. A arquitetura da solução:
+This project aims to provide a service for searching geographic coordinates from address(es) provided in a spreadsheet. The solution architecture:
+
 
 ![Project_img](img/project_diagram.png)
 
-### Tecnologias:
+### Technologies:
 
-- Flask: Micro-framework escrito em python para desenvolvimento web;
-- Mapbox Geocoding API: API do Mapbox(https://www.mapbox.com/place-search/) para coleta das coordenadas;
-- Postgresql: Banco de dados para armazenamento das consultas;
-- Docker: Container para rodar e isolar a aplicação;
+- Flask: Micro-framework written in Python for web development;
+- Mapbox Geocoding API: Mapbox API (https://www.mapbox.com/place-search/) to collect the coordinates;
+- Postgresql: Database for storing queries;
+- Docker: Container to run and isolate the application;
 
-## Como rodar
+## How to run it
 
-Iniciar na raiz do diretório do projeto:
+Start at the root of the project directory:
 
 ```bash
 docker-compose up
 ```
-Assim que executar, basta acessar o "localhost:5000" no seu navegador.
+Once executed, simply access "localhost:5000" in your browser.
+
 
 ![print_web](img/print_web.png)
 
-⚠️ Utilize o arquivo de excel como layout [aqui](file/)
+⚠️ Use the Excel file as a layout [here](file/)
 
-Seguindo o modelo do excel (mesmo nome/nr. de colunas), a API está configurada para retornar até 3 localizações mais próximas da busca e somente é valido para endereços do **Brasil**. O resultado próximo seria como esse:
+Following the Excel model (same name/number of columns), the API is configured to return up to 3 locations closest to the search and is only valid for addresses in Brazil. The next result would be like this:
 
-**Busca:** 
+**Search:** 
 
 ![busca_end](img/busca_end.png)
 
-**Resultado:**
+**Results:**
 
 ![consulta_end](img/consulta_end.png)
 
-Obs.:
-- O Geocoding API do Mapbox aceita até 100.000 requests gratuitos, passando disso é pago.
-- Pode ser consultado endereço de qualquer país, mas limitei a busca apenas para o Brasil;
-- Documentação da API: https://docs.mapbox.com/api/search/#geocoding 
+Ps.:
+- The Mapbox Geocoding API accepts up to 100,000 free requests, after that it is paid.
+- You can query addresses from any country, but I limited the search to Brazil only;
+- API documentation: https://docs.mapbox.com/api/search/#geocoding
 
 
 
